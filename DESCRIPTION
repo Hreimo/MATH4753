@@ -1,0 +1,11 @@
+Package: FALL224753ma0029
+Type: Package
+Title: MATH 4753
+Version: 0.1.0
+Author: Ivan Ma
+Maintainer: Ivan.A.Ma-1@ou.edu
+Description: Contains function from Applied Statistical Methods
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
