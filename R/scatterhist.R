@@ -5,6 +5,7 @@
 #' @param xlab x label
 #' @param ylab y label
 #'
+#'
 #' @return A detailed plot
 #' @export
 #'
