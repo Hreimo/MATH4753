@@ -4,7 +4,7 @@
 #' @param y Y variable as a vector
 #' @param xlab x label
 #' @param ylab y label
-#'
+#' @importFrom graphics barplot hist layout mtext par
 #'
 #' @return A detailed plot
 #' @export

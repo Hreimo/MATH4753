@@ -1,13 +1,16 @@
 #' @title Binomial
 #'
-#' @param iter
-#' @param n
-#' @param p
+#' @param iter Iterations
+#' @param n Size
+#' @param p Probability
+#' @importFrom grDevices rainbow
+#'
 #'
 #' @return Multiple bargraphs
 #' @export
 #'
 #' @examples
+#' \dontrun{mybin)()}
 mybin=function(iter=100,n=10, p=0.5){
   # make a matrix to hold the samples
   #initially filled with NA's
