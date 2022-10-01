@@ -3,7 +3,7 @@
 #' @param iter Iterations
 #' @param n Size
 #' @param p Probability
-#' @importFrom grDevices rainbow
+#' @importFrom grDevices 'rainbow'
 #'
 #'
 #' @return Multiple bargraphs
