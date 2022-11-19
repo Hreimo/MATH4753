@@ -9,6 +9,7 @@
 #' @return Multiple bargraphs
 #' @export
 #'
+#'
 #' @examples
 #' \dontrun{mybin)()}
 mybin=function(iter=100,n=10, p=0.5){
@@ -29,3 +30,4 @@ mybin=function(iter=100,n=10, p=0.5){
   barplot(succ.tab/(iter), col=rainbow(n+1), main="Binomial simulation", xlab="Number of successes")
   succ.tab/iter
 }
+
