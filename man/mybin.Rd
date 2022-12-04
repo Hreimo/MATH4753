@@ -14,7 +14,8 @@ mybin(iter = 100, n = 10, p = 0.5)
 \item{p}{Probability}
 }
 \value{
-Multiple bargraphs
+A bar graph simulating the binomial distribution
+given some sample size and probability of success
 }
 \description{
 Binomial

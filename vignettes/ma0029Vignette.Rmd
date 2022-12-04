@@ -1,0 +1,71 @@
+---
+title: "Vignette for Stats"
+author: "Ivan Ma"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ma0029Vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = FALSE,
+  comment = "#>"
+)
+```
+
+# Purpose
+
+The purpose of "FALL224753ma0029" is to store functions used throughout the course into one package. These functions provide statistical value in some way. Creating plots, estimating values, solving specific problems, etc. In this vignette, some of the functions contain within the package will be used and describe in brief.
+
+
+# Functions
+
+```{r setup}
+library(FALL224753ma0029)
+```
+
+## ntickets
+
+Ntickets() attempts to simulate the problem that airlines have of overbooking more tickets then they have seats to compensate for people not showing up. 
+
+N = number of seats on the plane
+
+p = probability of someone showing up
+
+gamma = probability of overbooking
+
+nc = number of tickets that should be sold using the normal approximation
+
+nd = number of tickets that should be sold using the binomial distribution 
+
+```{r}
+par(mar=c(1,1,1,1))
+FALL224753ma0029::ntickets()
+```
+
+## scatterhist
+
+Scatterhist() creates histograms for the x and y values as well as plots y ~ x.
+
+```{r}
+with(fire, scatterhist(DISTANCE,DAMAGE, xlab="DISTANCE"))
+```
+
+## myncurve
+
+myncurve() creates a visual of the normal distribution and the corresponding lower-tail probability given a value.
+
+```{r}
+myncurve()
+```
+
+## myboot2
+
+myboot2() creates a bootstrap sample statistic given some function and data set. The example below uses the `DAMAGE` variable from the `fire` data set, the `mean` function, and `alpha = 0.05`
+
+```{r}
+myboot2(x=fire$DAMAGE)
+```

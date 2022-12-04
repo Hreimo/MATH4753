@@ -6,7 +6,8 @@
 #' @importFrom grDevices 'rainbow'
 #'
 #'
-#' @return Multiple bargraphs
+#' @return A bar graph simulating the binomial distribution
+#' given some sample size and probability of success
 #' @export
 #'
 #'

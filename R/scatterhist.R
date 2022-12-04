@@ -6,7 +6,7 @@
 #' @param ylab y label
 #' @importFrom graphics 'barplot' hist layout mtext par
 #'
-#' @return A detailed plot
+#' @return A detailed scatter plot using the specified data
 #' @export
 #'
 #'

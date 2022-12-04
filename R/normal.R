@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples \dontrun{myncurve(10,5,6)}
-myncurve = function(mu, sigma,a){
+myncurve = function(mu=10, sigma=5,a=6){
   curve(dnorm(x,mean=mu,sd=sigma), xlim = c(mu-3*sigma, mu + 3*sigma))
   curvex = seq(mu-3*sigma, a , length = 1000000)
   curvey = dnorm(curvex, mu, sigma)

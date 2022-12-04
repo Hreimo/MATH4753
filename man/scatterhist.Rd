@@ -4,7 +4,7 @@
 \alias{scatterhist}
 \title{Scatter histogram}
 \usage{
-scatterhist(x, y, xlab = "", ylab = "")
+scatterhist(x = 5, y = 5, xlab = "0", ylab = "1")
 }
 \arguments{
 \item{x}{X variable as a vector}
@@ -16,7 +16,7 @@ scatterhist(x, y, xlab = "", ylab = "")
 \item{ylab}{y label}
 }
 \value{
-A detailed plot
+A detailed scatter plot using the specified data
 }
 \description{
 Scatter histogram
